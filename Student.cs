@@ -1,16 +1,15 @@
-// See https://aka.ms/new-console-template for more information
 using LibraryProject;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace LibraryProject    
 {
-    class Program
+    public class Student : LibraryMember
     {
-        static void Main()
-        {
-            // Your code to initialize and run the application
-            LibraryClient client = new LibraryClient();
-            client.UseLibrarySystem();
-        }
+        public Student(string name) : base(name) { }
     }
 }
